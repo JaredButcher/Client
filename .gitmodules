@@ -1,0 +1,3 @@
+[submodule "src/internal"]
+	path = src/internal
+	url = https://github.com/MultimediaExtensibleGit/Runtime.git
