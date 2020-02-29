@@ -19,6 +19,8 @@ from kivy.uix.label import Label
 from internal.meg_runtime import Config
 from internal.meg_runtime.plugins import Plugin, PluginManager
 
+from panels import LoginPanel, FilePanel
+
 # MEG app
 class MEGApp(App):
     """Multimedia Extensible Git (MEG) Client Application"""
@@ -39,7 +41,9 @@ class MEGApp(App):
         # Set the application title
         self.title = 'Multimedia Extensible Git'
         # Build the UI
-        return Label(text='Multimedia Extensible Git')
+        # return Label(text='Multimedia Extensible Git')
+        # return LoginPanel()
+        return FilePanel()
 
 # Run MEG app when executed directly
 if __name__ == '__main__':
