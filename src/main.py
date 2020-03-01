@@ -42,8 +42,8 @@ class MEGApp(App):
         self.title = 'Multimedia Extensible Git'
         # Build the UI
         # return Label(text='Multimedia Extensible Git')
-        # return LoginPanel()
-        return FilePanel()
+        return LoginPanel()
+        # return FilePanel()
 
 # Run MEG app when executed directly
 if __name__ == '__main__':
