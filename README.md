@@ -14,7 +14,11 @@
 
 * Clone the repository and execute the following command from the working copy in Python:
 
-  `pipenv sync`
+  `pipenv sync --dev`
+
+* Update the runtime submodule:
+
+  `git submodule update --init src/internal`
 
 ## Build
 

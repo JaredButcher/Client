@@ -6,8 +6,11 @@ block_cipher = None
 a = Analysis(['src/main.py'],
              pathex=['.'],
              binaries=[],
-             datas=[],
-             hiddenimports=['pkg_resources.py2_warn'],
+             datas=[
+               ('./src/internal/meg_runtime', 'internal/meg_runtime'),
+               ('./src/meg.kv', '.')
+             ],
+             hiddenimports=['pip', 'pkg_resources.py2_warn'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
@@ -26,7 +29,8 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=True  , icon='src/images/meg.ico')
+          console=True,
+          icon='src/images/meg.ico')
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
