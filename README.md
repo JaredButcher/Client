@@ -29,3 +29,11 @@
 * Build a debug executable folder
 
   `pipenv run pyinstaller meg-debug.spec`
+
+## Test
+
+* From Client directory
+
+  `pytest`
+  or
+  `python -m pytest`
